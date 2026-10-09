@@ -1,0 +1,293 @@
+# GramBazaar — Complete Website Development Prompt
+
+You are a senior website developer and UI/UX designer with 15+ years of experience in building premium, responsive e-commerce websites.
+
+I want you to design and develop a complete, modern, mobile-responsive, single-page e-commerce website named **“GramBazaar”** to help local sellers from Shahdol, Madhya Pradesh, sell their local products directly to customers through WhatsApp.
+
+## 1. Project Overview
+
+- **Website Name:** GramBazaar
+- **Tagline:** “शहडोल का अपना बाज़ार — गाँव से सीधे आपके घर तक”
+- **Website Type:** Local products e-commerce website
+- **Target Location:** Shahdol, Madhya Pradesh, India
+- **Website Language:** Hindi
+- **Design:** Premium, clean, modern, attractive and trustworthy
+- **Technology:** HTML5, CSS3 and vanilla JavaScript
+- **Website Structure:** One-page website
+- **Order System:** WhatsApp-based ordering
+- **Seller WhatsApp Number:** +919368465315
+
+The primary goal is to help local farmers, artisans, small businesses and village sellers sell their products online without requiring a complex e-commerce backend.
+
+## 2. Premium UI/UX Design
+
+Create an attractive and professional design with:
+
+- A clean white background with natural green and earthy colors.
+- Premium green, cream and subtle orange accents.
+- Modern typography with readable Hindi text.
+- Beautiful product cards with rounded corners and soft shadows.
+- High-quality product images.
+- Smooth hover effects and subtle animations.
+- Professional spacing, consistent icons and clear buttons.
+- A mobile-first layout that looks excellent on smartphones, tablets and desktops.
+- A trustworthy, local-market-inspired visual identity.
+
+Avoid clutter, excessive animations and unnecessary elements.
+
+## 3. Header and Navigation
+
+Create a responsive header featuring:
+
+- GramBazaar logo with a simple leaf or shopping basket icon.
+- Hindi navigation links: होम, सभी उत्पाद, हमारे बारे में, संपर्क.
+- A search bar to find products by name.
+- A shopping cart icon displaying the number of selected items.
+- A mobile hamburger menu.
+- A prominent “WhatsApp से ऑर्डर करें” button.
+
+All navigation links should scroll to their respective sections on the same page.
+
+## 4. Hero Section
+
+Create an attractive hero section with the heading:
+
+**“शहडोल के स्थानीय उत्पाद, अब आपके घर तक!”**
+
+Supporting text:
+
+“अपने क्षेत्र के किसानों, कारीगरों और छोटे व्यापारियों से खरीदें ताज़ा, स्थानीय और उपयोगी उत्पाद। सीधे WhatsApp से ऑर्डर करें।”
+
+Include two buttons:
+
+- “उत्पाद देखें”
+- “WhatsApp से ऑर्डर करें”
+
+Use an attractive image representing Indian village products, local farmers, fresh produce and traditional handicrafts.
+
+Add three small trust indicators:
+- स्थानीय विक्रेताओं का समर्थन
+- आसान WhatsApp ऑर्डर
+- पारदर्शी उत्पाद मूल्य
+
+Do not make unverified claims about certifications, organic status or delivery guarantees.
+
+## 5. Product Categories
+
+Create attractive category buttons or cards for:
+
+- अनाज और दालें
+- स्थानीय खाद्य पदार्थ
+- फल और सब्जियाँ
+- शहद और प्राकृतिक उत्पाद
+- हस्तशिल्प और घरेलू सामान
+- गाँव के विशेष उत्पाद
+
+Make category filters functional using JavaScript.
+
+## 6. Product Listing
+
+Display sample products relevant to the Shahdol region. Use realistic sample data that the seller can edit later.
+
+Each product card must contain:
+
+- Product image.
+- Product name in Hindi.
+- Short description.
+- Price in Indian rupees (₹).
+- Unit such as प्रति किलो, प्रति पैकेट or प्रति पीस.
+- Optional availability status.
+- Quantity selector with minus and plus buttons.
+- “कार्ट में जोड़ें” button.
+- “WhatsApp से खरीदें” button.
+
+Example sample products:
+
+1. स्थानीय चावल
+2. अरहर दाल
+3. चना दाल
+4. महुआ से बने स्थानीय उत्पाद
+5. शहद
+6. स्थानीय हस्तशिल्प
+7. मसाले
+8. पारंपरिक घरेलू उत्पाद
+
+Use clearly marked demonstration prices and editable product data. Do not falsely claim that every sample product is currently available.
+
+## 7. Shopping Cart Functionality
+
+Implement a fully functional cart using vanilla JavaScript.
+
+The customer should be able to:
+
+- Add products to the cart.
+- Increase or decrease product quantities.
+- Remove products from the cart.
+- See the cart update immediately.
+- View the unit price and quantity of each item.
+- See the subtotal and estimated total.
+- Add multiple different products to one order.
+- See the total number of items in the cart.
+
+Prevent invalid quantities, zero-quantity items and negative quantities.
+
+Show a helpful Hindi message when the cart is empty.
+
+The cart should work without requiring a user account or login.
+
+## 8. Customer Details and WhatsApp Checkout
+
+When the customer clicks “ऑर्डर करें”, open a clean checkout form containing:
+
+- ग्राहक का पूरा नाम
+- मोबाइल नंबर
+- पूरा पता
+- गाँव/शहर
+- पिन कोड (optional)
+- ऑर्डर से संबंधित अतिरिक्त जानकारी (optional)
+
+Validate the required fields before proceeding. Validate the Indian mobile number format.
+
+After the customer submits the form, generate a properly formatted Hindi WhatsApp order message containing:
+
+- GramBazaar order heading.
+- Customer name.
+- Customer mobile number.
+- Complete delivery address.
+- Every selected product name.
+- Quantity of each product.
+- Unit price.
+- Line-item total.
+- Subtotal.
+- Any optional customer instructions.
+- Order date, if practical.
+
+Send the customer to the following WhatsApp order link with the message pre-filled:
+
+https://wa.me/919368465315?text=ENCODED_ORDER_MESSAGE
+
+Use JavaScript's `encodeURIComponent()` to encode the generated message properly.
+
+The customer should be able to review and send the order through WhatsApp.
+
+**Important:** WhatsApp should open with the seller's number and pre-filled order details. Do not claim that an order has been delivered to the seller until the customer actually sends the WhatsApp message.
+
+## 9. Single-Product Ordering
+
+Allow customers to click “WhatsApp से खरीदें” on any product card.
+
+The checkout should automatically include the selected product and its chosen quantity. The customer should enter their name, mobile number and address before the order message is generated.
+
+All product orders must use the seller's WhatsApp number: **+919368465315**.
+
+## 10. Additional Sections
+
+Add the following sections to the same page:
+
+### हमारे बारे में
+Explain that GramBazaar aims to connect Shahdol's local sellers and customers through a simple digital marketplace.
+
+### GramBazaar क्यों चुनें?
+- स्थानीय व्यापारियों को बढ़ावा।
+- सरल और सुविधाजनक ऑर्डर प्रक्रिया।
+- उत्पादों और कीमतों की स्पष्ट जानकारी।
+- सीधे विक्रेता से WhatsApp पर संपर्क।
+
+### स्थानीय विक्रेता बनें
+Add a section inviting local farmers, artisans and small business owners to list their products.
+
+Button: “विक्रेता बनने के लिए WhatsApp करें”
+
+The button should open WhatsApp to the seller number with a pre-filled Hindi enquiry message.
+
+### सुझाव और प्रतिक्रिया
+Create a suggestion form with:
+- नाम (optional).
+- मोबाइल नंबर (optional).
+- सुझाव या प्रतिक्रिया.
+- Submit button.
+
+Validate the feedback field and provide a clear message explaining how the suggestion will be submitted. Since there is no backend, allow the customer to send the suggestion through WhatsApp using the same seller number.
+
+### अक्सर पूछे जाने वाले सवाल (FAQ)
+Include questions about:
+- ऑर्डर कैसे करें?
+- क्या बिना अकाउंट के ऑर्डर कर सकते हैं?
+- क्या सभी उत्पाद उपलब्ध हैं?
+- डिलीवरी की जानकारी कैसे मिलेगी?
+- स्थानीय विक्रेता GramBazaar से कैसे जुड़ सकते हैं?
+
+Do not promise delivery, payment or return policies that have not been specified. Explain that customers can confirm these details directly with the seller.
+
+## 11. Footer
+
+Include:
+
+- GramBazaar logo and tagline.
+- Quick navigation links.
+- Product categories.
+- Seller WhatsApp contact.
+- Shahdol, Madhya Pradesh location reference.
+- Copyright notice.
+- A short statement supporting local businesses.
+
+Add a floating WhatsApp contact button and a mobile-friendly sticky cart button where appropriate.
+
+## 12. Technical Requirements
+
+Build the complete website using:
+
+- HTML5 for structure.
+- CSS3 for styling.
+- Vanilla JavaScript for functionality.
+- Responsive CSS Grid and Flexbox.
+- Semantic HTML and accessible form labels.
+- Mobile-first responsive design.
+- Proper keyboard navigation and visible focus states.
+- Optimized images and lazy loading where appropriate.
+- Search engine-friendly page title and meta description.
+- Hindi language metadata using `lang="hi"`.
+- Indian currency formatting.
+- Functional category filters, search, cart, quantity selectors, checkout validation and WhatsApp message generation.
+
+Use a single `index.html` file containing the HTML, CSS and JavaScript so that a beginner can run the website easily in VS Code or a browser.
+
+Do not require a database, server, login system, paid service or API key for the basic version.
+
+Keep product information in an easy-to-edit JavaScript array containing the product ID, name, category, description, price, unit, image and availability.
+
+## 13. Security and Reliability
+
+- Never request or store unnecessary customer information.
+- Do not store customer addresses or phone numbers in browser storage.
+- Do not put private API keys or secret credentials in frontend code.
+- Validate customer inputs before generating WhatsApp messages.
+- Clearly explain that WhatsApp orders require the customer to send the pre-filled message.
+- Do not simulate successful payment or confirmed delivery.
+- Use trusted image URLs or locally stored images, with fallback images if necessary.
+
+## 14. Performance and Final Quality
+
+Ensure that:
+
+- The website works on mobile, tablet and desktop.
+- All buttons and interactive elements work.
+- The cart calculations are accurate.
+- The WhatsApp order message is correctly encoded.
+- Empty-cart checkout is prevented.
+- Product search and category filters work.
+- The checkout form displays helpful Hindi validation messages.
+- The design looks premium without being complicated.
+
+## 15. Expected Output
+
+Provide:
+
+1. The complete working `index.html` code.
+2. All HTML, CSS and JavaScript in the same file.
+3. Sample product data with editable prices and images.
+4. Functional cart and WhatsApp checkout.
+5. A working suggestion form that sends feedback through WhatsApp.
+6. Clear instructions in simple Hindi explaining how to save the file, open it in a browser and customize the products, images and prices.
+
+**Final instruction:** Do not provide only a plan, wireframe or partial code. Generate the complete, usable, mobile-responsive GramBazaar website with a premium Hindi UI and a working WhatsApp ordering flow. Prioritize simplicity, trust, accessibility and the needs of local sellers and customers in Shahdol.
